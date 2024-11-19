@@ -1,0 +1,6 @@
+kind: wasmer.io/App.v0
+name: Blood-Bank-Website
+owner: sps234
+package: .
+scaling:
+  mode: single_concurrency
