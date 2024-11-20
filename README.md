@@ -1,27 +1,41 @@
-This is a [Laravel](https://Blood-Bank-Website.org/) project bootstrapped with `composer create-project Blood-Bank-Website/Blood-Bank-Website Blood-Bank-Website-wasmer-example` (with some minor adaptations for Wasmer).
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-## Getting Started
+# BloodBank
 
-First, install the dependencies:
-
+## Installation
 ```bash
-composer install
+composer global require laravel/installer
+
+laravel new bloodbank-app
 ```
-
-You can run the development server:
-
 ```bash
+cd bloodbank-app
+ 
 php artisan serve
 ```
 
-You can run the Laravel example using Wasmer (check out the [install guide](https://docs.wasmer.io/install)):
+## Features
+* Donor Registration: Donors can register themselves on the platform and 
+provide their blood donation details.
+* Blood Donation: Registered donors can update their availability for blood 
+donation.
+* Blood Request: Users who require blood can send a request to the donors.
+* Request Management: Donors can accept or reject the blood donation 
+requests they receive.
 
-```bash
-wasmer run .
-```
+## Images
+![](images/1.png)
+![](images/2.png)
+![](images/3.png)
+![](images/4.png)
 
-> [!IMPORTANT]
-> You may need to replace the absolute path of the current dir `$PWD` with `/app` in `bootstrap/cache/config.php`: `sed 's|'$PWD'|/app|g' bootstrap/cache/config.php > bootstrap/cache/config.php`.
+## License
 
-Open [http://127.0.0.1:8000](http://127.0.0.1:8000) with your browser to see your Laravel app.
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
